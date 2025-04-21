@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-gray-950 text-gray-100 font-sans;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-600 text-white hover:bg-secondary-700;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-600 text-white hover:bg-accent-700;
+  }
+  
+  .btn-ghost {
+    @apply bg-transparent text-gray-100 hover:bg-gray-800 hover:text-white;
+  }
+  
+  .btn-outline {
+    @apply border border-primary-600 bg-transparent text-primary-600 hover:bg-primary-600 hover:text-white;
+  }
+  
+  .card {
+    @apply rounded-lg border border-gray-800 bg-gray-900 p-6 shadow-md transition-all;
+  }
+  
+  .form-input {
+    @apply w-full rounded-md border border-gray-700 bg-gray-800 px-4 py-2 text-gray-100 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500;
+  }
+  
+  .form-label {
+    @apply mb-2 block text-sm font-medium text-gray-300;
+  }
+  
+  .neon-border {
+    @apply relative rounded-lg;
+  }
+  
+  .neon-border::before {
+    content: "";
+    @apply absolute -inset-0.5 rounded-lg bg-gradient-to-r from-primary-600 to-secondary-600 opacity-75 blur transition-all;
+    z-index: -1;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent;
+  }
+}
