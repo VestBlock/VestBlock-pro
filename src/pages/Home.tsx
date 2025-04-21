@@ -4,17 +4,17 @@ import { ArrowRight, Sparkles, Shield, TrendingUp, BarChart2 } from 'lucide-reac
 
 export function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-black text-white">
       <Navbar />
-      
+
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-hero-pattern bg-cover bg-center">
-          <div className="container mx-auto px-4 py-24 sm:px-6 lg:px-8">
+        <section className="bg-gray-900 bg-cover bg-center py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <h1 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                 <span className="block">Financial freedom</span>
-                <span className="block gradient-text">through technology</span>
+                <span className="block text-primary-500">through technology</span>
               </h1>
               <p className="mb-8 text-xl text-gray-300">
                 VestBlock helps you optimize your credit, maximize your finances, and build
@@ -31,64 +31,64 @@ export function Home() {
             </div>
           </div>
         </section>
-        
+
         {/* Features Section */}
         <section className="bg-gray-950 py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-bold gradient-text">
+              <h2 className="mb-4 text-3xl font-bold text-primary-400">
                 Advanced Financial Analysis
               </h2>
               <p className="mx-auto max-w-2xl text-lg text-gray-400">
                 Leverage cutting-edge AI to analyze your financial data and unlock hidden opportunities
               </p>
             </div>
-            
+
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <div className="card hover:border-primary-600 hover:shadow-glow transition-all duration-300">
+              <div className="p-6 border border-gray-700 rounded-xl bg-gray-800 hover:border-primary-500 transition-all">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-900">
                   <BarChart2 className="h-6 w-6 text-primary-500" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-white">Credit Analysis</h3>
                 <p className="text-gray-400">
-                  Upload your credit report and receive detailed analysis and recommendations powered by AI.
+                  Upload your credit report and receive detailed AI-powered recommendations.
                 </p>
               </div>
-              
-              <div className="card hover:border-primary-600 hover:shadow-glow transition-all duration-300">
+
+              <div className="p-6 border border-gray-700 rounded-xl bg-gray-800 hover:border-primary-500 transition-all">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-900">
                   <Shield className="h-6 w-6 text-primary-500" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-white">Dispute Strategy</h3>
                 <p className="text-gray-400">
-                  Get customized strategies to dispute negative items and boost your credit score.
+                  Generate custom strategies to remove negative items and boost your score.
                 </p>
               </div>
-              
-              <div className="card hover:border-primary-600 hover:shadow-glow transition-all duration-300">
+
+              <div className="p-6 border border-gray-700 rounded-xl bg-gray-800 hover:border-primary-500 transition-all">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-900">
                   <TrendingUp className="h-6 w-6 text-primary-500" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-white">Financial Opportunities</h3>
+                <h3 className="mb-2 text-xl font-semibold text-white">Opportunities</h3>
                 <p className="text-gray-400">
-                  Discover side hustles and credit card optimization strategies based on your profile.
+                  Discover curated side hustles and credit card recommendations based on your profile.
                 </p>
               </div>
             </div>
           </div>
         </section>
-        
+
         {/* CTA Section */}
-        <section className="bg-cta-pattern py-16">
+        <section className="bg-gray-900 py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="rounded-2xl bg-gray-900/70 backdrop-blur-sm border border-gray-800 p-8 md:p-12 lg:p-16">
+            <div className="rounded-2xl bg-gray-800/70 backdrop-blur-sm border border-gray-700 p-8 md:p-12 lg:p-16">
               <div className="md:flex md:items-center md:justify-between">
                 <div className="md:max-w-2xl">
                   <h2 className="text-3xl font-bold text-white">
                     Ready to transform your financial future?
                   </h2>
                   <p className="mt-4 text-lg text-gray-300">
-                    Join VestBlock today and start optimizing your credit and finances with our powerful AI tools.
+                    Start optimizing your credit and building wealth with VestBlock Pro.
                   </p>
                 </div>
                 <div className="mt-8 md:mt-0">
@@ -102,7 +102,7 @@ export function Home() {
           </div>
         </section>
       </main>
-      
+
       {/* Footer */}
       <footer className="border-t border-gray-800 bg-gray-900 py-8">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
