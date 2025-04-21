@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
-import Dashboard from './pages/Dashboard';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
-import ProAnalysis from './pages/ProAnalysis';
-import DirectAnalysis from './pages/DirectAnalysis';
+import { Dashboard } from './pages/Dashboard';
+import { Login } from './pages/Login';
+import { Signup } from './pages/Signup';
+import { ProAnalysis } from './pages/ProAnalysis';
+import { DirectAnalysis } from './pages/DirectAnalysis';
 
 function App() {
   return (
